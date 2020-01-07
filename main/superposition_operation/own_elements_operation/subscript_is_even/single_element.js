@@ -1,7 +1,7 @@
 'use strict';
 var single_element = function(collection) {
-    var oddIndexElements = findOddIndexElements(collection);
-    var singleElements = deduplication(oddIndexElements);
+    let oddIndexElements = findOddIndexElements(collection);
+    let singleElements = deduplication(oddIndexElements);
     return singleElements;
 };
 
@@ -15,8 +15,8 @@ function findOddIndexElements(collection) {
 
 
 function deduplication(collection) {
-    var singleCollection = [];
-    for (var i in collection) {
+    let singleCollection = [];
+    for (let i in collection) {
         if (collection.indexOf(collection[i]) === collection.lastIndexOf(collection[i])) {
             singleCollection.push(collection[i]);
         }

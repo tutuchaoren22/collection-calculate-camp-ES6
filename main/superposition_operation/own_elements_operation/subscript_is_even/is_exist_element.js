@@ -1,6 +1,6 @@
 'use strict';
 var is_exist_element = function(collection, element) {
-    var oddIndexElements = findOddIndexElements(collection);
+    let oddIndexElements = findOddIndexElements(collection);
     return hasElement(oddIndexElements, element);
 };
 

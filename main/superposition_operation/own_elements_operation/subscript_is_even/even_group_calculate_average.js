@@ -1,13 +1,13 @@
 'use strict';
 
 function even_group_calculate_average(collection) {
-    var oddIndexElements = findOddIndexElements(collection);
-    var evenElements = selectEven(oddIndexElements);
+    let oddIndexElements = findOddIndexElements(collection);
+    let evenElements = selectEven(oddIndexElements);
     if (evenElements.length === 0) {
         return [0];
     } else {
-        var arrayGroupByDigit = groupByDigit(evenElements);
-        var averageNumber = computeArrayAvg(arrayGroupByDigit);
+        let arrayGroupByDigit = groupByDigit(evenElements);
+        let averageNumber = computeArrayAvg(arrayGroupByDigit);
         return averageNumber;
     }
 };
@@ -25,9 +25,9 @@ function selectEven(collection) {
 }
 
 function groupByDigit(collection) {
-    var collection1Digit = selectByDigit(collection, 1);
-    var collection2Digit = selectByDigit(collection, 2);
-    var collection3Digit = selectByDigit(collection, 3);
+    let collection1Digit = selectByDigit(collection, 1);
+    let collection2Digit = selectByDigit(collection, 2);
+    let collection3Digit = selectByDigit(collection, 3);
     return [collection1Digit, collection2Digit, collection3Digit];
 }
 
@@ -36,10 +36,10 @@ function selectByDigit(collection, num) {
 }
 
 function computeArrayAvg(collection) {
-    var avg = [];
-    for (var i in collection) {
+    let avg = [];
+    for (let i in collection) {
         if (collection[i].length) {
-            var average = computeAvg(collection[i]);
+            let average = computeAvg(collection[i]);
             avg.push(average);
         }
     }
@@ -47,14 +47,14 @@ function computeArrayAvg(collection) {
 }
 
 function computeAvg(collection) {
-    var sum = computeSum(collection);
-    var num = collection.length;
+    let sum = computeSum(collection);
+    let num = collection.length;
     return sum / num;
 }
 
 
 function computeSum(collection) {
-    var sum = collection.reduce(function(x, y) {
+    let sum = collection.reduce(function(x, y) {
         return x + y;
     });
     return sum;

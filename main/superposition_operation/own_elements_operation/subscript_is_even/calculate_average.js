@@ -1,9 +1,9 @@
 'use strict';
 
 function calculate_average(collection) {
-    var oddIndexElements = findOddIndexElements(collection);
-    var sum = computeSum(oddIndexElements);
-    var averageNumber = computeAvg(sum, oddIndexElements.length);
+    let oddIndexElements = findOddIndexElements(collection);
+    let sum = computeSum(oddIndexElements);
+    let averageNumber = computeAvg(sum, oddIndexElements.length);
     return averageNumber;
 
 };
@@ -17,7 +17,7 @@ function findOddIndexElements(collection) {
 }
 
 function computeSum(collection) {
-    var sum = collection.reduce(function(x, y) {
+    let sum = collection.reduce(function(x, y) {
         return x + y;
     });
     return sum;
