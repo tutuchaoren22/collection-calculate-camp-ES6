@@ -1,10 +1,10 @@
 'use strict';
-var even_asc_odd_desc = function(collection) {
-    var evenElements = selectEven(collection);
-    var oddElements = selectOdd(collection);
+let even_asc_odd_desc = function(collection) {
+    let evenElements = selectEven(collection);
+    let oddElements = selectOdd(collection);
     evenElements.sort(ascendingOrder);
     oddElements.sort(deascendingOrder);
-    var newSortElements = evenElements.concat(oddElements);
+    let newSortElements = evenElements.concat(oddElements);
     return newSortElements;
 };
 
