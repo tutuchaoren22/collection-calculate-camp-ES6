@@ -1,12 +1,12 @@
 function collect_same_elements(collection_a, object_b) {
-    var newCollection_a = findKeyValue(collection_a);
-    var newCollection_b = object_b.value;
+    const newCollection_a = findKeyValue(collection_a);
+    const newCollection_b = object_b.value;
     return findSameElement(newCollection_a, newCollection_b);
 }
 
 function findKeyValue(collection_a) {
-    var keyValue = [];
-    for (var i in collection_a) {
+    let keyValue = [];
+    for (let i of collection_a) {
         keyValue.push(collection_a[i].key);
     }
     return keyValue;
