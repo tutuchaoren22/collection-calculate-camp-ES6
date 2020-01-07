@@ -1,15 +1,15 @@
 function create_updated_collection(collection_a, object_b) {
-    var collectionCount = computeCount(collection_a);
-    var collectionUpdated = createUpdatedCollection(collectionCount, object_b)
+    let collectionCount = computeCount(collection_a);
+    let collectionUpdated = createUpdatedCollection(collectionCount, object_b)
     return collectionUpdated;
 }
 
 function computeCount(collection) {
-    var countSameElements = [];
-    for (var i = 0; i < collection.length; i++) {
-        var sameElements = {};
-        var item = collection[i];
-        var lengthOfElements = countSameElements.length;
+    let countSameElements = [];
+    for (let i = 0; i < collection.length; i++) {
+        let sameElements = {};
+        let item = collection[i];
+        let lengthOfElements = countSameElements.length;
         if (lengthOfElements) {
             addToCount(item, lengthOfElements, sameElements, countSameElements);
         } else {
@@ -42,12 +42,12 @@ function addToElement(item, sameElements, countSameElements) {
 
 
 function createUpdatedCollection(collection_a, object_b) {
-    var itemToDecrease = object_b.value;
-    for (var i in itemToDecrease) {
-        var item = itemToDecrease[i];
-        for (var j = 0; j < collection_a.length; j++) {
+    let itemToDecrease = object_b.value;
+    for (let i in itemToDecrease) {
+        let item = itemToDecrease[i];
+        for (let j = 0; j < collection_a.length; j++) {
             if (item === collection_a[j].key) {
-                var numberToDecrease = parseInt(collection_a[j].count / 3);
+                let numberToDecrease = parseInt(collection_a[j].count / 3);
                 collection_a[j].count -= numberToDecrease;
                 break;
             }
