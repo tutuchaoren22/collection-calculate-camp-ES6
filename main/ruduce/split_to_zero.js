@@ -1,7 +1,7 @@
 'use strict';
 
 function split_to_zero(number, interval) {
-    var infiniteDivision = [];
+    let infiniteDivision = [];
     while (number > Number.EPSILON) {
         infiniteDivision.push(number);
         number = parseFloat((number - interval).toFixed(1));
