@@ -1,9 +1,11 @@
 function count_same_elements(collection) {
-    var countSameElements = [];
-    for (var i = 0; i < collection.length; i++) {
-        var sameElements = {};
-        var item = collection[i];
-        var lengthOfElements = countSameElements.length;
+    let countSameElements = [];
+    let i;
+    const len = collection.length;
+    for (i = 0; i < len; i++) {
+        let sameElements = {};
+        const item = collection[i];
+        const lengthOfElements = countSameElements.length;
         if (lengthOfElements) {
             addToCount(item, lengthOfElements, sameElements, countSameElements);
         } else {
@@ -15,7 +17,7 @@ function count_same_elements(collection) {
 
 
 function addToCount(item, lengthOfElements, sameElements, countSameElements) {
-    var itemCount = item.split(/-|\[|\]|:/);
+    let itemCount = item.split(/-|\[|\]|:/);
     item = itemCount[0];
     itemCount = Number(itemCount[1]);
     if (countSameElements[lengthOfElements - 1].name === item) {
