@@ -1,14 +1,14 @@
 'use strict';
 
 function average_to_letter(collection) {
-    var sum = computeSum(collection);
-    var averageNumber = computeAvg(sum, collection.length);
-    var numberToLetter = transferEvenToLetter(averageNumber);
+    let sum = computeSum(collection);
+    let averageNumber = computeAvg(sum, collection.length);
+    let numberToLetter = transferEvenToLetter(averageNumber);
     return numberToLetter;
 }
 
 function computeSum(collection) {
-    var sum = collection.reduce(function(x, y) {
+    let sum = collection.reduce(function(x, y) {
         return x + y;
     });
     return sum;

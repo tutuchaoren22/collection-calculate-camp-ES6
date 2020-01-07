@@ -2,8 +2,8 @@
 
 function even_to_letter(collection) {
 
-    var evenInCollection = findEvenInCollection(collection);
-    var evenToLetter = transferEvenToLetter(evenInCollection);
+    let evenInCollection = findEvenInCollection(collection);
+    let evenToLetter = transferEvenToLetter(evenInCollection);
     return evenToLetter;
 }
 
