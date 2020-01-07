@@ -11,8 +11,9 @@ function get_integer_interval_2(number_a, number_b) {
 }
 
 function increaseInterval(number_a, number_b) {
-    var resultInterval = [];
-    for (var i = number_a; i <= number_b; i++) {
+    let resultInterval = [];
+    let i;
+    for (i = number_a; i <= number_b; i++) {
         evenAdd(resultInterval, i);
     }
     return resultInterval;
@@ -20,7 +21,8 @@ function increaseInterval(number_a, number_b) {
 
 function decreaseInterval(number_a, number_b) {
     var resultInterval = [];
-    for (var i = number_a; i >= number_b; i--) {
+    let i;
+    for (i = number_a; i >= number_b; i--) {
         evenAdd(resultInterval, i);
     }
     return resultInterval;

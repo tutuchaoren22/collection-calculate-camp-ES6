@@ -1,7 +1,7 @@
 'use strict';
 
 function get_union(collection_a, collection_b) {
-    var diffElements = findDifferentElements(collection_a, collection_b);
+    const diffElements = findDifferentElements(collection_a, collection_b);
     return collection_a.concat(diffElements);
 }
 

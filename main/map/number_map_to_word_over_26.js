@@ -1,7 +1,6 @@
 'use strict';
 var number_map_to_word_over_26 = function(collection) {
-    var mapWord = collection.map(item => transferToLetter(item));
-    return mapWord;
+    return collection.map(item => transferToLetter(item));
 };
 
 function transferToLetter(number) {

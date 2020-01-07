@@ -9,13 +9,13 @@ function compute_average(collection) {
     // var averageNumber = sum / collection.length;
 
     // 方法二：利用reduce来累加求和；
-    var sum = computeSum(collection);
-    var averageNumber = computeAvg(sum, collection.length);
+    const sum = computeSum(collection);
+    const averageNumber = computeAvg(sum, collection.length);
     return averageNumber;
 }
 
 function computeSum(collection) {
-    var sum = collection.reduce(function(x, y) {
+    const sum = collection.reduce(function(x, y) {
         return x + y;
     });
     return sum;

@@ -1,8 +1,8 @@
 'use strict';
 
 function find_last_even(collection) {
-    var evenAll = findAllEven(collection);
-    var lastEven = findLastEven(evenAll);
+    const evenAll = findAllEven(collection);
+    const lastEven = findLastEven(evenAll);
     return lastEven;
 }
 

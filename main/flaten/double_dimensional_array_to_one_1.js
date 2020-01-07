@@ -1,7 +1,7 @@
 'use strict';
 
 function double_to_one(collection) {
-    var oneDimensional = flattenToOneDimensional(collection);
+    const oneDimensional = flattenToOneDimensional(collection);
     return oneDimensional;
 }
 

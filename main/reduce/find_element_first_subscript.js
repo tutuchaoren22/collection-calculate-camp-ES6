@@ -1,8 +1,10 @@
 'use strict';
 
 function find_element_first_subscript(collection, element) {
-    var index;
-    for (var i = 0; i < collection.length; i++) {
+    let index;
+    let i;
+    const len = collection.length;
+    for (i = 0; i < len; i++) {
         if (element === collection[i]) {
             index = i;
             break;

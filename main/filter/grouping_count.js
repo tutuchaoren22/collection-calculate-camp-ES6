@@ -1,8 +1,10 @@
 'use strict';
 
 function grouping_count(collection) {
-    var groupCount = {};
-    for (var i = 0; i < collection.length; i++) {
+    let groupCount = {};
+    let i;
+    const len = collection.length;
+    for (i = 0; i < len; i++) {
         if (collection[i] in groupCount) {
             groupCount[collection[i]]++;
         } else {

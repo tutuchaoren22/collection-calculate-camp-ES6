@@ -1,8 +1,8 @@
 'use strict';
 
 function find_first_even(collection) {
-    var evenAll = findAllEven(collection);
-    var firstEven = findFirstEven(evenAll);
+    const evenAll = findAllEven(collection);
+    const firstEven = findFirstEven(evenAll);
     return firstEven;
 }
 

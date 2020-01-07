@@ -11,16 +11,18 @@ function get_letter_interval(number_a, number_b) {
 }
 
 function increaseInterval(number_a, number_b) {
-    var resultInterval = [];
-    for (var i = number_a; i <= number_b; i++) {
+    let resultInterval = [];
+    let i;
+    for (i = number_a; i <= number_b; i++) {
         resultInterval.push(String.fromCharCode(i + 96));
     }
     return resultInterval;
 }
 
 function decreaseInterval(number_a, number_b) {
-    var resultInterval = [];
-    for (var i = number_a; i >= number_b; i--) {
+    let resultInterval = [];
+    let i;
+    for (i = number_a; i >= number_b; i--) {
         resultInterval.push(String.fromCharCode(i + 96));
     }
     return resultInterval;

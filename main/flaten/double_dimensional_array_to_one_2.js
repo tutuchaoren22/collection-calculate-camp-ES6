@@ -1,8 +1,8 @@
 'use strict';
 
 function double_to_one(collection) {
-    var oneDimensional = flattenToOneDimensional(collection);
-    var deduplicationOneDimensional = deduplication(oneDimensional);
+    const oneDimensional = flattenToOneDimensional(collection);
+    const deduplicationOneDimensional = deduplication(oneDimensional);
     return deduplicationOneDimensional;
 }
 
