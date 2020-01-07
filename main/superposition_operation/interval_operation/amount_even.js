@@ -1,8 +1,8 @@
 'use strict';
 
 function amount_even(collection) {
-    var findEvenCollection = findEvenInCollection(collection);
-    var sum = sumOperation(findEvenCollection);
+    let findEvenCollection = findEvenInCollection(collection);
+    let sum = sumOperation(findEvenCollection);
     return sum;
 }
 
@@ -11,7 +11,7 @@ function findEvenInCollection(collection) {
 }
 
 function sumOperation(collection) {
-    var sum = collection.reduce(function(x, y) {
+    let sum = collection.reduce(function(x, y) {
         return x + y;
     });
     return sum;
