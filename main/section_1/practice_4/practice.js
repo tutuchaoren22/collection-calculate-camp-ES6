@@ -7,7 +7,7 @@ function collect_same_elements(collection_a, object_b) {
 function findKeyValue(collection_a) {
     let keyValue = [];
     for (let i of collection_a) {
-        keyValue.push(collection_a[i].key);
+        keyValue.push(i.key);
     }
     return keyValue;
 }
